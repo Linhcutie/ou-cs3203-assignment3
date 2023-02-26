@@ -22,6 +22,8 @@ public class App {
         System.out.println("Sum = "+sum1(a));
         System.out.println("Product = "+product(a));
         s.close();
+
+        reverse(arr);
     }
 
     public static int sum1(int []copy) 
@@ -48,5 +50,23 @@ public class App {
         return product;
     }
 
+    public static int[] reverse(int [] copy)
+    {
+        int[] copy2 = new int[copy.length];
+        int j= copy.length;
+        for (int i = 0; i < copy.length; i++) {
+            copy2[j - 1] = copy[i];
+            j = j - 1;
+        }
 
-}
+        System.out.println("Reversed array is: \n");
+        for (int k = 0; k < copy.length; k++) {
+            System.out.println(copy2[k]);
+        }
+        return copy2;
+        }
+        
+    }
+
+
+
