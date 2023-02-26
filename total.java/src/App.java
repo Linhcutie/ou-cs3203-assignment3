@@ -6,6 +6,7 @@ public class App {
          int arr[] = { 1, 2, 3, 4, 5 };
         System.out.println(sum1(arr));
         System.out.println(product(arr));
+        reverse(arr);
 
         int n = 0;
         Scanner s = new Scanner(System.in);
@@ -21,9 +22,10 @@ public class App {
 
         System.out.println("Sum = "+sum1(a));
         System.out.println("Product = "+product(a));
+        reverse(a);
         s.close();
 
-        reverse(arr);
+        
     }
 
     public static int sum1(int []copy) 
